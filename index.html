@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Google</title>
+</head>
+
+<style>
+    body {
+        background: #fff;
+        margin: 0px;
+        display: grid;
+        height: 100vh;
+    }
+    .container {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-areas:"top"
+                            "center"
+                            "bottom";
+        border: 1px solid black;
+    }
+    .top-nav {
+        margin-top: 10px;
+        margin-right: 15px;
+        grid-area: top;
+        display: inline-flex;
+       float: right;
+       padding-bottom: 10px;
+    }
+    
+    .top-nav a{
+        margin-right: 15px;
+        text-decoration: none;
+        color: rgba(0,0,0,0.87);
+        font-size: 13px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .top-nav img {
+        vertical-align: middle;
+        margin-right: 5px;
+    }
+    .center {
+        display: block;
+        margin: auto;
+        width: 584px;
+    }
+
+    .center-div img {
+        display: block;
+        margin: auto;
+    }
+    .center-div {
+        margin-top: 250px;
+        text-align: center;
+        display: grid;
+        width: 584px;
+    }
+
+    .bottom {
+        position: fixed;
+        bottom: 15px;
+        left: 20px;
+    }
+    input {
+        margin-top: 30px;
+        width: 582px;
+        height: 44px;
+        border-radius: 50px;
+        border: 1px solid #dadce0;
+    }
+    
+    button {
+        width: 130px;
+        height: 40px;
+        cursor: pointer;
+        border: white;
+        background-color: #f8f9fa;
+    }
+    button:hover {
+        border: 1px solid #dadce0;
+        border-radius: 4px;
+    }
+    .center-buttons {
+        margin-top: 50px;
+        text-align: center;
+    }
+    .search {
+        display: inline-flex;
+    }
+
+    .first-image {
+        position: fixed;
+        margin-left: 10px;
+        margin-top: 42px;
+        
+    }
+    .second-image{
+        position: fixed;
+        margin-left: 550px;
+        margin-top: 42px;
+    }
+    #location {
+        position: fixed;
+        bottom: 50px;
+        left: 20px;
+        text-decoration: none;
+        color: #70757a;
+        font-size: 14px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    hr {
+        width: 99vw;
+        margin-left: -15px;
+        border: 1px solid #dadce0;;
+    }
+    .bottom a {
+        text-decoration: none;
+        color: #70757a;
+        font-size: 14px;
+        font-family: Arial, Helvetica, sans-serif;
+        margin-right: 20px;
+    }
+    .bottom a:hover {
+        text-decoration: underline;
+    }
+    .footer2 {
+        position: fixed;
+        bottom: 15px;
+        right: 0;
+    }
+    nav a {
+        margin-top: 10px;
+    }
+</style>
+
+    <body>
+        <div class="container">
+            <div class="top-nav">
+                <div class="nav">
+                    <a href="#">Gmail</a>
+                    <a href="#">Images</a>
+                    <img style="width:22px; height: 22px;" src="images/google-apps.png">
+                    <img style="width: 32px; height: 32px;" src="images/google-profile.png">
+             </div>
+                
+            </div>
+            <div class="center">
+                <div class="center-div">
+                    <img style="text-align: center;" src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google logo">
+                    <div class="search">
+                        <div class="first-image">
+                        <img class="search-icon" src="images/google-search.png">
+                         </div>
+                        <input type="text">
+                        <div class="second-image">
+                        <img class="mic-icon" src="images/google-mic.png">
+                        </div>
+                    </div>
+                </div>
+                    <div class="center-buttons">
+                        <button>Google search</button>
+                        <button>I'm feeling lucky</button>
+                    </div>
+            </div>
+            <footer>
+                <a id="location" href="#">USA</a>
+                
+                <div class="bottom">
+                    <div >
+                        <hr>
+                        <a href="#" >About</a>
+                        <a href="#" >Advertising</a>
+                        <a href="#" >Business</a>
+                        <a href="#" >How Search works</a>
+                    </div>
+                        <div class="footer2">
+                        <a href="#" >Privacy</a>
+                        <a href="#" >Terms</a>
+                        <a href="#" >Settings</a>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    
+    </body>
+</html>
